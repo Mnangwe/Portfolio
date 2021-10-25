@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #dddddd;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  line-height: 1.7;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+#home .main-wrap {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7)),
+    url(./images/bg-home.jpg);
+  background-position: center center;
+  background-size: cover;
+  align-items: center;
+  height: 100%;
+  transition: background-image 300ms ease-in 200ms;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+#home .main-wrap .row p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.7em;
+  line-height: 24px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  margin: 25px auto;
+}
+#home .main-wrap .row p span {
+  background-color: #f7465b;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 4px 20px;
+  transform: rotate(45deg);
+}
+#home .main-wrap .row a {
+    width: 150px;
+height: 45px;
+line-height: 45px;
+padding: 0px;
+margin: 10px;
+color: #fff;
+}
+
+.about-me {
+    background-color: #f7465b;
+}
+.about-me:hover {
+    background-color: #fff;
+    
+}
+.contact-me {
+    border: 1px solid #f7465b;
+}
+.contact-me:hover {
+    background-color: #f7465b;
+}
