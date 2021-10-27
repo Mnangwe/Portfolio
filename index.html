@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Azabenathi | Portfolio</title>
     <!-- Bootstrap CSS -->
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -80,106 +80,117 @@
 
 
     <!-- Navbar -->
-    <header id="header" class="stick-to-top">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-white">
-            <div class="container-fluid">
-                <a class="navbar-brand text-secondary" href="#home">Azabenathi</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active text-secondary" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Projects
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item text-secondary" href="#skills">Skills</a></li>
-                                <li><a class="dropdown-item text-secondary" href="#portfolio">Projects</a></li>
-                                <li><a class="dropdown-item text-secondary" href="#testimonial">Testimonials</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+    <header id="header" class="stick-to-top bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-white">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-secondary" href="#home">Azabenathi</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon bg-secondary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-secondary justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active text-secondary" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#experience">Experience</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Projects
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item text-secondary" href="#skills">Skills</a></li>
+                                    <li><a class="dropdown-item text-secondary" href="#portfolio">Projects</a></li>
+                                    <li><a class="dropdown-item text-secondary" href="#testimonial">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-secondary" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+
     </header>
 
 
     <section id="about" class="section text-center">
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="profile-intro text-center justify-content-center">
-                    <div class="profile-image text-center">
-                        <img src="./images/profile1.jpg" class="mx-auto img-fluid" alt="Azabenathi">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="profile-intro text-center justify-content-center">
+                        <div class="profile-image text-center">
+                            <img src="./images/profile1.jpg" class="mx-auto img-fluid" alt="Azabenathi">
+                        </div>
+                        <h2 class="text-center">Azabenathi Pupuma</h2>
+                        <div class="separator text-center"></div>
+                        <p class="title">Creative UI/UX Designer And Backend Developer</p>
                     </div>
-                    <h2 class="text-center">Azabenathi Pupuma</h2>
-                    <div class="separator text-center"></div>
-                    <p class="title">Creative UI/UX Designer And Backend Developer</p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="info-tabs col-sm-7">
-                <!-- tabs -->
-                <div class="container">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Why Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">My Vision</a>
-                        </li>
-                    </ul>
-                    <!-- content for tabs -->
-                    <div class="tab-content text-center">
-                        <div id="about-me-content" class="panel">
-                            <h4>About Me</h4>
-                            <div class="separator"></div>
-                            <p>
-                                Hello,
-                                <br>
-                                Iam JOHN DOE, Front-End Developer with 3 years of experience rapidiously productize
-                                wireless
-                                results.
-                            </p>
-                            <p>
-                                whereas multidisciplinary intellectual capital. Distinctively synergize market-driven
-                                innovation and prospective channels. Dramatically drive an expanded array of expertise
-                                with
-                                distinctive technology. Completely cultivate standardized manufactured.
-                            </p>
+            <div class="row">
+                <div class="info-tabs col-sm-7">
+                    <!-- tabs -->
+                    <div class="container">
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Why Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">My Vision</a>
+                            </li>
+                        </ul>
+                        <!-- content for tabs -->
+                        <div class="tab-content text-center">
+                            <div id="about-me-content" class="panel">
+                                <h4>About Me</h4>
+                                <div class="separator"></div>
+                                <p>
+                                    Hello,
+                                    <br>
+                                    Iam JOHN DOE, Front-End Developer with 3 years of experience rapidiously productize
+                                    wireless
+                                    results.
+                                </p>
+                                <p>
+                                    whereas multidisciplinary intellectual capital. Distinctively synergize
+                                    market-driven
+                                    innovation and prospective channels. Dramatically drive an expanded array of
+                                    expertise
+                                    with
+                                    distinctive technology. Completely cultivate standardized manufactured.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="personal-info text-center col-sm-5">
-                <div class="content text-center">
-                    <h4>Personal Info</h4>
-                    <div class="separator centered"></div>
-                    <p class="personal-info">Name: Azabenathi Pupuma</p>
-                    <p class="personal-info">Nationality: South African</p>
-                    <p class="personal-info">DOB: 28-09-1995</p>
-                    <p class="personal-info">E-mail: pupuma.azabenathi@gmail.com</p>
-                    <p class="personal-info">Phone: 067-245-8824</p>
-                    <p class="personal-info"></p>
-                    <p class="personal-info"></p>
+                <div class="personal-info text-center col-sm-5">
+                    <div class="content text-center">
+                        <h4>Personal Info</h4>
+                        <div class="separator centered"></div>
+                        <p class="personal-info">Name: Azabenathi Pupuma</p>
+                        <p class="personal-info">Nationality: South African</p>
+                        <p class="personal-info">DOB: 28-09-1995</p>
+                        <p class="personal-info">E-mail: pupuma.azabenathi@gmail.com</p>
+                        <p class="personal-info">Phone: 067-245-8824</p>
+                        <p class="personal-info"></p>
+                        <p class="personal-info"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -367,8 +378,10 @@
                         <h2>Check Out My Work</h2>
                         <div class="separator text-center"></div>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque doloribus iure cumque, 
-                            unde eveniet facere sequi rerum similique, tempore laudantium quasi sed sapiente accusamus enim quibusdam amet dolorem dicta ex dolor. Eveniet temporibus soluta harum expedita rem minus explicabo corrupti commodi atque eum! Officiis atque optio dolorem labore illum hic.
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque doloribus iure cumque,
+                            unde eveniet facere sequi rerum similique, tempore laudantium quasi sed sapiente accusamus
+                            enim quibusdam amet dolorem dicta ex dolor. Eveniet temporibus soluta harum expedita rem
+                            minus explicabo corrupti commodi atque eum! Officiis atque optio dolorem labore illum hic.
                         </p>
                     </div>
                 </div>
@@ -381,19 +394,199 @@
             </div>
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4">
-                    
+                    <div class="project">
+                        <div class="project-img-wrapper">
+                            <img src="./images/ageCalcutor.jpg" alt="ageCalculator"
+                                class="center-block img-thumbnail img-responsive project-1">
+                        </div>
+                        <div class="img-overlay">
+                            <div class="overlay-text">
+                                <h4 class="display-16">Age and Temp Calculator</h4>
+                                <p>HTML / CSS / JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
-                <div class="col-xs-12 col-sm-6 col-md-4"></div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="project">
+                        <div class="project-img-wrapper">
+                            <img src="./images/stopwatch.png" alt="ageCalculator"
+                                class="center-block img-thumbnail img-responsive project-1 ">
+                        </div>
+                        <div class="img-overlay">
+                            <div class="overlay-text">
+                                <h4 class="display-16">Age and Temp Calculator</h4>
+                                <p>HTML / CSS / JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="project">
+                        <div class="project-img-wrapper">
+                            <img src="./images/tourHeroes.jpeg" alt="ageCalculator"
+                                class="center-block img-thumbnail img-responsive project-1">
+                        </div>
+                        <div class="img-overlay">
+                            <div class="overlay-text">
+                                <h4 class="display-16">Angular - Tutorial</h4>
+                                <p>Angular</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="project">
+                        <div class="project-img-wrapper">
+                            <img src="./images/tech.jpg" alt="ageCalculator"
+                                class="center-block img-thumbnail img-responsive project-1">
+                        </div>
+                        <div class="img-overlay">
+                            <div class="overlay-text">
+                                <h4 class="display-16">Tech-path for beginners</h4>
+                                <p>Angular / NodeJs / Express / Firebase</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row"></div>
+            <div class="row">
+                <div class="col-xs-12 interested">
+                    <h2 class="interested">Interested?</h2>
+                    <div class="separator"></div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus vero a dignissimos ex
+                        voluptatem obcaecati.
+                        <br>
+                        Commodi facere voluptatum rerum magni laboriosam hic dolorum aut at.
+                    </p>
+                    <a href="#contact" class="btn border btn-custom text-white">Lets Go!</a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="testimonial" class="section text-center bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-intro">
+                        <h2>
+                            What my lovely people say about me
+                        </h2>
+                        <div class="separator"></div>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Aut at velit officiis neque ut vitae?
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner text-center text-white">
+                    <div class="carousel-item active">
+                        <img src="images/kgomotso.jpeg" class="d-block" style="width: 100px; height: 100px;" alt="...">
+                        <h4 class="my-4"> Kgomotso Ramabetha</h4>
+                        <p class="text-align-center">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Velit placeat incidunt ducimus cum, esse voluptates?
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Letlhogonolo.jpeg" class="d-block" alt="...">
+                        <h4 class="my-4"> Letlhogonolo Sekwati</h4>
+                        <p class="text-align-center">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum minus culpa omnis doloremque
+                            error
+                            debitis expedita iusto dolore impedit in! Veniam ab cumque sequi et.
+                        </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Sibusiso.jpeg" class="d-block" alt="...">
+                        <h4 class="my-4"> Sibusiso Mayalo</h4>
+                        <p class="text-align-center">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus facere praesentium dolore
+                            dignissimos ab soluta modi sequi voluptatem placeat aperiam.
+                        </p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev carousel-control" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next carousel-control" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </section>
 
-    <section id="testimonial" class="section text-center"></section>
+    <section id="contact" class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section-intro">
+                        <h2>Looking Forward to Our Meeting</h2>
+                        <div class="separator"></div>
+                        <p>You can find me here. I would love to hear from you all. Hire me, ask me anything. I promise
+                            I am your best candidate</p>
+                    </div>
+                </div>
+            </div>
 
-    <section id="contact" class="section text-center"></section>
+            <!-- Contact Form -->
+            <div class="row">
+                <div class="col-sm-12 col-md-6"></div>
+                <div class="col-sm-12 col-md-6">
+                    <form action="">
+                        <div class="form-intro">
+                            <h4>
+                                Wanna Leave Me a Message?
+                            </h4>
+                            <div class="separator text-start"></div>
+                            <p>
+                                Contact me here. Just type your name and email I will answer you!
+                            </p>
+                        </div>
+                        
+                            <div class="input-group">
+                                <div class="input-container">
+                                    <i class="fa fa-user icon"></i>
+                                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
+                                  </div>
+                                
+                                  <div class="input-container">
+                                    <i class="fa fa-envelope icon"></i>
+                                    <input class="input-field" type="text" placeholder="Email" name="email">
+                                  </div>
+                            </div>
+                            <button type="submit" class="btn">Send message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Icons -->
+            <div class="row">
+                <div class="col-xs-12 icon-wrapper">
+                    <h4>Follow Me Here:</h4>
+                    <div class="social follow-me">
+                        <a href="https://www.linkedin.com/in/azabenathi-pupuma/" target="_blank" class="fa icon fa-linkedin"></a>
+                        <a href="https://www.instagram.com/mnangwe_/" target="_blank" class="fa icon fa-instagram"></a>
+                        <a href="https://github.com/Mnangwe" target="_blank" class="fa icon fa-github"></a>
+                        <a href="#" class="fa icon fa-codepen"></a>
+                        <a href="#" class="fa icon fa-dribbble"></a>
+                        <a href="https://www.facebook.com/azabenathi.pupuma/" target="_blank" class="fa icon fa-facebook"></a>
+                        <a href="https://twitter.com/azabenathi" target="_blank" class="fa icon fa-twitter"></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <footer>
