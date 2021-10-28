@@ -25,7 +25,7 @@
                 <div class="container my-auto">
                     <div class="row">
                         <div class="col-md-10 mx-auto text-center">
-                            <div class="col-md-2 bg-white mx-auto shadow rounded-pill p-2 mb-4 block"
+                            <div class="col-md-2 bg-white mx-auto shadow rounded-pill p-2 mb-4 block image"
                                 style="visibility: visible;">
                                 <img class="img-fluid rounded-pill d-block w-100" src="images/profile1.jpg"
                                     title="I'm Azabenathi" alt="">
@@ -47,7 +47,7 @@
                             <!-- Links to scroll -->
                             <a href="#portfolio" class="scroll-link btn btn-custom reverse light about-me">About Me</a>
 
-                            <a href="#contact" class="scroll-link btn btn-custom contact-me">Hire Me</a>
+                            <a href="#contact" class="scroll-link btn btn-custom contact-me bg-transparent">Hire Me</a>
                         </div>
                     </div>
                 </div>
@@ -78,43 +78,42 @@
         </div>
     </section>
 
-
     <!-- Navbar -->
     <header id="header" class="stick-to-top bg-white">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-white">
                 <div class="container-fluid">
-                    <a class="navbar-brand text-secondary" href="#home">Azabenathi</a>
+                    <a class="navbar-brand text-dark text-dark" href="#home">A<span class="text-lowercase text-white">&lt;/a&gt;</span>P</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon bg-secondary"></span>
                     </button>
-                    <div class="collapse navbar-collapse text-secondary justify-content-end" id="navbarNavDropdown">
+                    <div class="collapse navbar-collapse text-dark justify-content-end" id="navbarNavDropdown">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active text-secondary" aria-current="page" href="#home">Home</a>
+                                <a class="nav-link text-dark active" aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#about">About</a>
+                                <a class="nav-link text-dark" href="#about">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#experience">Experience</a>
+                                <a class="nav-link text-dark" href="#experience">Experience</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-secondary" href="#" id="navbarDropdownMenuLink"
+                                <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdownMenuLink"
                                     role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Projects
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item text-secondary" href="#skills">Skills</a></li>
-                                    <li><a class="dropdown-item text-secondary" href="#portfolio">Projects</a></li>
-                                    <li><a class="dropdown-item text-secondary" href="#testimonial">Testimonials</a>
+                                    <li><a class="dropdown-item text-dark" href="#skills">Skills</a></li>
+                                    <li><a class="dropdown-item text-dark" href="#portfolio">Projects</a></li>
+                                    <li><a class="dropdown-item text-dark" href="#testimonial">Testimonials</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-secondary" href="#contact">Contact</a>
+                                <a class="nav-link text-dark" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -140,44 +139,64 @@
                 </div>
             </div>
             <div class="row">
+                <!-- info tabs -->
                 <div class="info-tabs col-sm-7">
-                    <!-- tabs -->
-                    <div class="container">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">About Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">Why Me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="">My Vision</a>
-                            </li>
-                        </ul>
-                        <!-- content for tabs -->
-                        <div class="tab-content text-center">
-                            <div id="about-me-content" class="panel">
-                                <h4>About Me</h4>
-                                <div class="separator"></div>
-                                <p>
+                    <div class="contanier">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active text-uppercase" id="nav-home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                    aria-selected="true">About Me</button>
+                                <button class="text-uppercase nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                    aria-selected="false">Why Me</button>
+                                <button class="text-uppercase nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                    aria-selected="false">My Drive</button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show text-start px-2 active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <h4 class="pt-2">About Me</h4>
+                                <div class="separator about"></div>
+                                <p class="">
                                     Hello,
                                     <br>
-                                    Iam JOHN DOE, Front-End Developer with 3 years of experience rapidiously productize
-                                    wireless
-                                    results.
+                                    I am Azabenathi Pupuma,Software Developer with 6 months experience.
+                                    <br>
+                                    Produced my first Fullstack app using JavaScript (MEAN Stack). Were I gained
+                                    experience in Software Development Life Cycle and Agile Methodology.
                                 </p>
+                            </div>
+                            <div class="tab-pane fade text-start px-2" id="nav-profile" role="tabpanel"
+                                aria-labelledby="nav-profile-tab">
+                                <h4 class="pt-2">To Choose Me</h4>
+                                <div class="separator about"></div>
                                 <p>
-                                    whereas multidisciplinary intellectual capital. Distinctively synergize
-                                    market-driven
-                                    innovation and prospective channels. Dramatically drive an expanded array of
-                                    expertise
-                                    with
-                                    distinctive technology. Completely cultivate standardized manufactured.
+                                    I am a dynamic and innovative young man, with an impeccable eye for details. Always
+                                    eager to learn
+                                    and grow. Very good with relationship building and interpersonal skills.
+                                    <br>
+                                    Solid work ethic and goal oriented. Demonstrated background in design, project management and development skills.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade text-start px-2" id="nav-contact" role="tabpanel"
+                                aria-labelledby="nav-contact-tab">
+                                <h4 class="pt-2">My Goal</h4>
+                                <div class="separator about"></div>
+                                <p>
+                                    I am a dynamic and innovative young man, with an impeccable eye for details. Always
+                                    eager to learn
+                                    and grow. Very good with relationship building and interpersonal skills.
+                                    <br>
+                                    Solid work ethic and goal oriented. Demonstrated background in design, project management and development skills.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <div class="personal-info text-center col-sm-5">
                     <div class="content text-center">
@@ -207,7 +226,7 @@
                         I'm ready for your projects. Hire me now
                     </h3>
                     <div class="text-center">
-                        <a href="" class="btn border btn-custom text-white">Contact Me</a>
+                        <a href="#contact" class="btn border btn-custom text-white">Contact Me</a>
                         <a href="" class="btn border btn-custom text-white">My Resume</a>
                     </div>
                 </div>
@@ -276,9 +295,12 @@
                     </div>
                 </div>
             </div>
+
+            
         </div>
     </section>
 
+    
     <div class="seperator-big">
         <div class="container">
             <hr class="bg-danger">
@@ -293,6 +315,7 @@
                 <div class="col-md-6">
                     <p class="text-start">
                         HTML/CSS
+                        <i class="fab fa-html5"></i>
                         <span class="float-end">85%</span>
                     </p>
                     <div class="progress mb-4">
@@ -401,8 +424,8 @@
                         </div>
                         <div class="img-overlay">
                             <div class="overlay-text">
-                                <h4 class="display-16">Age and Temp Calculator</h4>
-                                <p>HTML / CSS / JavaScript</p>
+                                <h4 class="display-16 caption">Age and Temp Calculator</h4>
+                                <p class="caption">HTML / CSS / JavaScript</p>
                             </div>
                         </div>
                     </div>
@@ -450,6 +473,12 @@
                     </div>
                 </div>
             </div>
+
+            <div class="seperator-big">
+                <div class="container">
+                    <hr class="bg-danger">
+                </div>
+            </div>
             <div class="row">
                 <div class="col-xs-12 interested">
                     <h2 class="interested">Interested?</h2>
@@ -487,7 +516,7 @@
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner text-center text-white">
                     <div class="carousel-item active">
-                        <img src="images/kgomotso.jpeg" class="d-block" style="width: 100px; height: 100px;" alt="...">
+                        <img src="images/kgomotso.jpeg" class="d-block" alt="...">
                         <h4 class="my-4"> Kgomotso Ramabetha</h4>
                         <p class="text-align-center">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -526,7 +555,7 @@
         </div>
     </section>
 
-    <section id="contact" class="section text-center">
+    <section id="contact" class="section contact-section text-center">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
@@ -541,56 +570,69 @@
 
             <!-- Contact Form -->
             <div class="row">
-                <div class="col-sm-12 col-md-6"></div>
+                <!-- location -->
                 <div class="col-sm-12 col-md-6">
-                    <form action="">
-                        <div class="form-intro">
-                            <h4>
-                                Wanna Leave Me a Message?
-                            </h4>
-                            <div class="separator text-start"></div>
-                            <p>
-                                Contact me here. Just type your name and email I will answer you!
-                            </p>
-                        </div>
-                        
-                            <div class="input-group">
-                                <div class="input-container">
-                                    <i class="fa fa-user icon"></i>
-                                    <input class="input-field" type="text" placeholder="Username" name="usrnm">
-                                  </div>
-                                
-                                  <div class="input-container">
-                                    <i class="fa fa-envelope icon"></i>
-                                    <input class="input-field" type="text" placeholder="Email" name="email">
-                                  </div>
+
+                </div>
+
+                <!-- My form -->
+                <div class="col-sm-12 col-md-6">
+                    <form action="https://formspree.io/f/xnqlykyw" method="POST" style="max-width:500px;margin:auto">
+                        <h4>Please Leave Me a Message</h4>
+                        <p>Just leave me a message I will get back to you as soon as possible</p>
+                        <div class="input-container">
+                            <div>
+                                <i class="fa fa-user icon"></i>
                             </div>
-                            <button type="submit" class="btn">Send message</button>
+                            <input class="input-field bg-dark" type="text" placeholder="Your Name" name="name" required>
+                        </div>
+
+                        <div class="input-container">
+                            <div>
+                                <i class="fa fa-envelope icon"></i>
+                            </div>
+                            <input class="input-field bg-dark" type="text" placeholder="Your E-mail" name="email"
+                                required>
+                        </div>
+
+                        <div class="input-container">
+
+                            <div>
+                                <i class="fa fa-comment icon"></i>
+                            </div>
+                            <textarea class="input-field bg-dark" rows="4" id="message" name="message"
+                                placeholder="Type your message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
             </div>
 
+
             <!-- Icons -->
             <div class="row">
-                <div class="col-xs-12 icon-wrapper">
+                <div class="col-xs-12 icon-wrapper interested">
                     <h4>Follow Me Here:</h4>
                     <div class="social follow-me">
-                        <a href="https://www.linkedin.com/in/azabenathi-pupuma/" target="_blank" class="fa icon fa-linkedin"></a>
-                        <a href="https://www.instagram.com/mnangwe_/" target="_blank" class="fa icon fa-instagram"></a>
-                        <a href="https://github.com/Mnangwe" target="_blank" class="fa icon fa-github"></a>
-                        <a href="#" class="fa icon fa-codepen"></a>
-                        <a href="#" class="fa icon fa-dribbble"></a>
-                        <a href="https://www.facebook.com/azabenathi.pupuma/" target="_blank" class="fa icon fa-facebook"></a>
-                        <a href="https://twitter.com/azabenathi" target="_blank" class="fa icon fa-twitter"></a>
-                    </div> 
+                        <a href="https://www.linkedin.com/in/azabenathi-pupuma/" target="_blank"
+                            class="fa fa-linkedin"></a>
+                        <a href="https://www.instagram.com/mnangwe_/" target="_blank" class="fa fa-instagram"></a>
+                        <a href="https://github.com/Mnangwe" target="_blank" class="fa fa-github"></a>
+                        <a href="#" class="fa fa-codepen"></a>
+                        <a href="#" class="fa fa-dribbble"></a>
+                        <a href="https://www.facebook.com/azabenathi.pupuma/" target="_blank"
+                            class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/azabenathi" target="_blank" class="fa fa-twitter"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <footer>
-        <p class="footer">Created By Azabenathi Pupuma &copy; 2021: All right reserved</p>
+    <footer class="bg-dark">
+        <p class="footer text-white">Created By Azabenathi Pupuma &copy; 2021: All right reserved</p>
     </footer>
 
 
