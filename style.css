@@ -48,19 +48,21 @@ a {
 }
 #home .main-wrap .row p {
   font-family: "Raleway", sans-serif;
-  font-size: 1.7em;
+  font-size: 1.1em;
   line-height: 24px;
   text-transform: capitalize;
   letter-spacing: 2px;
   margin: 25px auto;
+  transition: all 0.5s ease-in-out;
 }
-#home .main-wrap .row h4 span {
+#home .main-wrap .row p span {
   background-color: #f7465b;
   display: inline-block;
   width: 10px;
   height: 10px;
   margin: 4px 20px;
   transform: rotate(45deg);
+  transition: all 0.5s ease-in-out;
 }
 #home .main-wrap .row a {
   width: 150px;
@@ -69,6 +71,7 @@ a {
   padding: 0px;
   margin: 10px;
   color: #fff;
+  transition: all 0.5s ease-in-out;
 }
 
 @media only screen and (max-width:768px) {
@@ -312,11 +315,27 @@ a.float-end {
   background-color: rgb(247, 70, 91);
   color: #fff;
 }
+@media screen and (max-width:1000px) {
+  .my-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .apps {
+    border: none;
+  }
+  
+}
+@media screen and (min-width:1000px) {
+  .net-project {
+    margin-left: 20px;
+  }
+}
 #portflio .project {
   position: relative;
   cursor: pointer;
   overflow: hidden;
   margin-bottom: 40px;
+  border: 1px solid pink;
 }
 #portfolio .progress .project-img-wrapper {
   transition: all 0.5s ease-in-out;
@@ -331,9 +350,29 @@ a.float-end {
   margin-right: auto;
   margin-left: auto;
   height: 270px;
-  width: auto;
+  width: 100%;
 }
 
+a.git-project:hover {
+  text-decoration: none;
+  background-color: #fff;
+  color: rgb(247, 70, 91);
+}
+a.git-project {
+  background-color: rgb(247, 70, 91);
+  color: #fff;
+}
+a.net-project {
+  color: #333333;
+}
+a.net-project:hover {
+  text-decoration: none;
+  background-color: rgb(247, 70, 91);;
+  color: white;
+}
+.project{
+  border: 1px solid pink;
+}
 .row>.interested {
   margin: 40px auto;
 }
@@ -353,13 +392,8 @@ a.float-end {
   border: none !important;
 }
 
-#portfolio project:hover .caption{
-  opacity: 1;
-}
+
 /* Testimonials/Refrees */
-.project {
-  
-}
 .carousel-item img {
   width: 100px;
   height: 100px;
@@ -374,6 +408,11 @@ a.float-end {
   margin: auto 14em;
 }
 
+@media only screen and (max-width: 992px) {
+  .carousel-item .text-align-center {
+    margin: auto 8em;
+  }
+}
 /* Contact Form */
 #contact .row:nth-child(1) {
   margin-bottom: 60px;
@@ -407,7 +446,7 @@ a.float-end {
   outline: none;
   border: none;
   border-radius: 0 8px 8px 0;
-
+  color: #fff;
 }
 .input-field:focus {
   border: 2px solid rgb(247, 70, 91);
@@ -470,7 +509,20 @@ a.float-end {
   background-color: #1da1f2;
 }
 
-
+@media only screen and (max-width: 1400px) {
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.contact-form .extra-info {
+  background-color: #eee;
+}
+@media screen and (max-width: 768px) {
+  .contact-form .extra-info {
+    background:white;
+  }
+}
 
 
 /* footer */
