@@ -54,7 +54,7 @@ a {
   letter-spacing: 2px;
   margin: 25px auto;
 }
-#home .main-wrap .row p span {
+#home .main-wrap .row h4 span {
   background-color: #f7465b;
   display: inline-block;
   width: 10px;
@@ -76,7 +76,9 @@ a {
     display: none !important;
   }
 }
-
+.division {
+  display: none;
+}
 .about-me {
   background-color: #f7465b !important;
 }
@@ -242,6 +244,7 @@ p.personal-info {
   }
   .personal-info-details {
     order: -1;
+    margin-bottom: 30px;
   }
 }
 /* Section Ready */
@@ -350,17 +353,13 @@ a.float-end {
   border: none !important;
 }
 
-.caption {
-  opacity: 0;
-}
-.caption:hover {
-  opacity: 1;
-}
 #portfolio project:hover .caption{
   opacity: 1;
 }
 /* Testimonials/Refrees */
-
+.project {
+  
+}
 .carousel-item img {
   width: 100px;
   height: 100px;
