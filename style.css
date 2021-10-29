@@ -230,7 +230,6 @@ header span.text-lowercase {
   margin: 10px auto;
 }
 .separator.about {
-  
   margin: 10px;
 }
 
@@ -359,16 +358,25 @@ a.git-project:hover {
   background-color: #fff;
   color: rgb(247, 70, 91);
 }
+
 a.git-project {
   background-color: rgb(247, 70, 91);
   color: #fff;
+  letter-spacing: 0.9px;
+  padding: 8px 10px;
+  transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93) 0s;
+  border: 1px solid rgb(247, 70, 91);
 }
 a.net-project {
   color: #333333;
+  letter-spacing: 0.9px;
+  padding: 8px 10px;
+  transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93) 0s;
+  border: 1px solid rgb(247, 70, 91);
 }
 a.net-project:hover {
   text-decoration: none;
-  background-color: rgb(247, 70, 91);;
+  background-color: rgb(247, 70, 91);
   color: white;
 }
 .project{
